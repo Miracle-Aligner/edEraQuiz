@@ -1,0 +1,107 @@
+{
+    "quizLength": 4,
+	"quiz":[
+		{
+			"hint": "The answer is C",
+			"title": "What is the right answer for question №1?",
+			"description": "You have few options below. Pick one and press the button."
+		},
+		{
+			"hint": "The answer is B",
+			"title": "What is the right answer for question №2?",
+			"description": "You have few options below. Pick one and press the button."
+		},
+		{
+			"hint": "The answer is A",
+			"title": "What is the right answer for question №3?",
+			"description": "You have few options below. Pick one and press the button."
+		},
+		{
+			"hint": "The answer is B",
+			"title": "What is the right answer for question №4?",
+			"description": "You have few options below. Pick one and press the button."
+		}
+	],
+	"answers": [
+		[
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "A",
+				"isRight": false
+			},
+			{
+				"hasPic": true,
+				"linkToPic": "https://lh3.googleusercontent.com/OACtHZY-eDew1SfenP9u4xnNTU8fjPAWhcVLNZJlgLlfmb-LnYvfRQRnMKKvn1E376uDKNHO_SOotXlnFy_N7ek",
+				"body": "Option with pic",
+				"isRight": false
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "C",
+				"isRight": true
+			}
+		],
+		[
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "A",
+				"isRight": false
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "B",
+				"isRight": true
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "C",
+				"isRight": false
+			}
+		],
+		[
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "A",
+				"isRight": true
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "B",
+				"isRight": false
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "C",
+				"isRight": false
+			}
+		],
+		[
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "A",
+				"isRight": false
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "B",
+				"isRight": true
+			},
+			{
+				"hasPic": false,
+				"linkToPic": null,
+				"body": "C",
+				"isRight": false
+			}
+		]
+    ]
+}
