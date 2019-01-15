@@ -24,7 +24,7 @@ Vue.component('question', {
 						<input type="radio" :id="'answer'+index" v-model="userAnswer" @click="changeDisabledState" :value="index">
 						<label :for="'answer'+index" :disabled="isDisabled">{{answers[index].body}}</label>
 					</div>
-				</div>
+				</div> 
 				<div v-else>
 					<div class="inputGroup" v-bind:class="{ 'wrong-answer': questionAnswered }" :disabled="isDisabled">
 						<span v-if="answer.hasPic" class="thumbnail">
