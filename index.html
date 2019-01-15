@@ -17,39 +17,47 @@
         <link rel="stylesheet" href="./public/css/main.css" type="text/css" />
         <link rel="stylesheet" href="./public/css/animate.css" type="text/css" />
         
-        
+        <title>Medical Quiz</title>
     </head>
 
     <body>
+        
         <div id = 'test' class="row">
             <div class="col-md-3 col-lg-3"></div>
-            <div class="main-block-wrap col-sm-12 col-md-6 col-lg-6">
+            <div class="main-block-wrap col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="main-block clearfix">
-
                     <div v-if="introFlag">
-                        <div>
-                            <h1 style="padding-top:35px">{{intro.title}}</h1>
-                            <a href="#" class="thumbnail quiz-description">
-                                <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg">
-                            </a>
-                            <p class="quiz-description">{{intro.description}}</p>
-                            <div style="text-align: center;">
-
-                                <button
-                                @click="loadMDData"
-                                name="mainDoctor" 
-                                class="button">
-                                    {{intro.mainDoctor}}
-                                </button>
-
-                                <button 
-                                @click="loadRDData"
-                                name="regularDoctor" 
-                                class="button">
-                                    {{intro.regularDoctor}}    
-                                </button>
-                                
+                        <div class="row">
+                            <div class="col-xs-1 col-sm-1 col-md-3 col-lg-3"> </div>
+                            <div class="col-xs-10 col-sm-10 col-md-6 col-lg-6">
+                                <h1 style="padding-top:35px">{{intro.title}}</h1>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-0 col-sm-0 "> </div>
+                            <div class="col-xs-12 col-sm-12 ">
+                                <a href="#" class="thumbnail quiz-description margin">
+                                    <img src="https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg">
+                                </a>
+                            </div>
+                        </div>
+                        <p class="quiz-description margin">{{intro.description}}</p>
+                        <div style="text-align: center;">
+
+                            <button
+                            @click="loadMDData"
+                            name="mainDoctor" 
+                            class="button">
+                                {{intro.mainDoctor}}
+                            </button>
+                            <p> </p>
+                            <button 
+                            @click="loadRDData"
+                            name="regularDoctor" 
+                            class="button">
+                                {{intro.regularDoctor}}    
+                            </button>
+                            
                         </div>
                     </div>
 
@@ -72,8 +80,13 @@
 
                     <div v-if="resultFlag">
                         <div>
-                            <h1>Дякуємо!</h1>
-                            <p class="quiz-description">
+                            <div class="row">
+                                <div class="col-xs-1 col-sm-1 col-md-2 col-lg-2"> </div>
+                                <div class="col-xs-10 col-sm-10 col-md-8 col-lg-8">
+                                    <h1 style="padding-top:35px">Дякуємо!</h1>
+                                </div>
+                            </div>
+                            <p class="quiz-description margin">
                                 Ви відповіли правильно на {{percentage}}% питань ({{rightAnswers}}/{{quizLength}})!
                             </p>
                             <div style="text-align: center">

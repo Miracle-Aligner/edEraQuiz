@@ -10,8 +10,8 @@ Vue.component('question', {
 				{{currentQuestion + 1}}/{{quizLength}}
 			</div>
 		</b>
-		<h2>{{question.title}}</h2>
-		<p class="quiz-description">{{question.description}}</p>
+		<h2 class="margin">{{question.title}}</h2>
+		<p class="quiz-description margin">{{question.description}}</p>
 	</div>
 	<div>
 		<div class="form">
