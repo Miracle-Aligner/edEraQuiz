@@ -18,7 +18,7 @@ Vue.component('question', {
 			<div v-for="(answer, index) in answers" style="flex:1">
 				<div v-if="answer.isRight">
 					<div class="inputGroup" v-bind:class="{ 'right-answer': questionAnswered }" :disabled="isDisabled">
-						<span v-if="answer.hasPic" class="">
+						<span v-if="answer.hasPic" class="thumbnail">
 							<img class="rounded mx-auto d-block" :src='answer.linkToPic'>
 						</span>
 						<input type="radio" :id="'answer'+index" v-model="userAnswer" @click="changeDisabledState" :value="index">
@@ -27,7 +27,7 @@ Vue.component('question', {
 				</div>
 				<div v-else>
 					<div class="inputGroup" v-bind:class="{ 'wrong-answer': questionAnswered }" :disabled="isDisabled">
-						<span v-if="answer.hasPic" class="">
+						<span v-if="answer.hasPic" class="thumbnail">
 							<img class="rounded mx-auto d-block" :src='answer.linkToPic'>
 						</span>
 						<input type="radio" :id="'answer'+index" v-model="userAnswer" @click="changeDisabledState" :value="index">
